@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="KIONIA Tinos — Greek food, sea views and island moments in Kionia, Tinos.">
+
+<title>KIONIA Tinos | Restaurant & Beach</title>
+
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+  color:#17324d;
+
+  background:#f7f5ef;
+
+  line-height:1.6
+
+}
+
+nav{
+
+  position:fixed;top:0;left:0;width:100%;z-index:10;
+
+  display:flex;justify-content:space-between;align-items:center;
+
+  padding:18px 7%;
+
+  background:rgba(255,255,255,.92);
+
+  backdrop-filter:blur(12px);
+
+  border-bottom:1px solid #eee
+
+}
+
+.logo{font-size:24px;font-weight:800;letter-spacing:3px;color:#087ea4}
+
+nav a{color:#17324d;text-decoration:none;margin-left:24px;font-weight:600}
+
+.hero{
+
+  min-height:100vh;
+
+  display:flex;align-items:center;
+
+  padding:120px 8% 80px;
+
+  background:
+
+    linear-gradient(rgba(8,52,76,.35),rgba(8,52,76,.45)),
+
+    url("https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1800&q=85")
+
+    center/cover;
+
+  color:white
+
+}
+
+.hero-content{max-width:700px}
+
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:14px}
+
+h1{font-size:clamp(54px,9vw,100px);line-height:.95;margin:20px 0}
+
+.hero p{font-size:20px;max-width:560px}
+
+.buttons{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+
+.btn{
+
+  display:inline-block;padding:14px 24px;border-radius:30px;
+
+  text-decoration:none;font-weight:700
+
+}
+
+.primary{background:#fff;color:#087ea4}
+
+.secondary{border:1px solid white;color:white}
+
+section{padding:90px 8%}
+
+.section-title{text-align:center;max-width:700px;margin:0 auto 50px}
+
+.section-title h2{font-size:42px;margin-bottom:12px}
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:24px;
+
+  max-width:1150px;
+
+  margin:auto
+
+}
+
+.card{
+
+  background:white;border-radius:20px;overflow:hidden;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.07)
+
+}
+
+.card img{width:100%;height:240px;object-fit:cover}
+
+.card-body{padding:25px}
+
+.card h3{font-size:24px;margin-bottom:8px}
+
+.menu{background:#eaf5f7}
+
+.menu-list{max-width:800px;margin:auto}
+
+.menu-item{
+
+  display:flex;justify-content:space-between;
+
+  padding:20px 0;border-bottom:1px solid #cbdde1
+
+}
+
+.menu-item h3{font-size:19px}
+
+.price{font-weight:800;color:#087ea4}
+
+.about{
+
+  display:grid;grid-template-columns:1fr 1fr;
+
+  gap:60px;align-items:center;max-width:1150px;margin:auto
+
+}
+
+.about img{width:100%;height:500px;object-fit:cover;border-radius:25px}
+
+.about h2{font-size:44px;margin-bottom:20px}
+
+.contact{
+
+  background:#123d56;color:white;text-align:center
+
+}
+
+.contact h2{font-size:42px;margin-bottom:15px}
+
+.contact a{color:white}
+
+footer{
+
+  background:#0d2c3e;color:#cbd9df;
+
+  padding:30px 8%;text-align:center
+
+}
+
+@media(max-width:800px){
+
+  nav{padding:15px 5%}
+
+  nav div:last-child{display:none}
+
+  .hero{padding-left:6%;padding-right:6%}
+
+  section{padding:65px 6%}
+
+  .grid,.about{grid-template-columns:1fr}
+
+  .about img{height:350px}
+
+  .section-title h2,.about h2,.contact h2{font-size:34px}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+  <div class="logo">KIONIA</div>
+
+  <div>
+
+    <a href="#about">About</a>
+
+    <a href="#menu">Menu</a>
+
+    <a href="#experience">Experience</a>
+
+    <a href="#contact">Contact</a>
+
+  </div>
+
+</nav>
+
+<header class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">Kionia · Tinos · Greece</div>
+
+    <h1>Island life,<br>served beautifully.</h1>
+
+    <p>
+
+      Good food, sea air and unforgettable moments on the coast of Tinos.
+
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn primary" href="#menu">Explore the menu</a>
+
+      <a class="btn secondary" href="#contact">Make an enquiry</a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<section id="about">
+
+  <div class="about">
+
+    <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85" alt="Greek island sea">
+
+    <div>
+
+      <div class="eyebrow">Welcome to Kionia</div>
+
+      <h2>A taste of Tinos by the sea.</h2>
+
+      <p>
+
+        KIONIA brings together the relaxed atmosphere of a Greek island,
+
+        fresh Mediterranean flavours and the beauty of the Aegean.
+
+      </p>
+
+      <br>
+
+      <p>
+
+        Come for lunch, stay for the sunset and make your day in Tinos
+
+        something worth remembering.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="menu" id="menu">
+
+  <div class="section-title">
+
+    <div class="eyebrow">Taste</div>
+
+    <h2>Our menu</h2>
+
+    <p>A selection inspired by Greek and Mediterranean flavours.</p>
+
+  </div>
+
+  <div class="menu-list">
+
+    <div class="menu-item">
+
+      <div>
+
+        <h3>Greek Salad</h3>
+
+        <p>Tomatoes, cucumber, olives, feta & herbs</p>
+
+      </div>
+
+      <div class="price">€12</div>
+
+    </div>
+
+    <div class="menu-item">
+
+      <div>
+
+        <h3>Grilled Fish</h3>
+
+        <p>Fresh catch, lemon, herbs & seasonal vegetables</p>
+
+      </div>
+
+      <div class="price">€24</div>
+
+    </div>
+
+    <div class="menu-item">
+
+      <div>
+
+        <h3>Chicken Souvlaki</h3>
+
+        <p>Grilled chicken, pita, salad & tzatziki</p>
+
+      </div>
+
+      <div class="price">€15</div>
+
+    </div>
+
+    <div class="menu-item">
+
+      <div>
+
+        <h3>Feta & Honey</h3>
+
+        <p>Warm feta, local honey & sesame</p>
+
+      </div>
+
+      <div class="price">€9</div>
+
+    </div>
+
+    <div class="menu-item">
+
+      <div>
+
+        <h3>Greek Yogurt</h3>
+
+        <p>Honey, walnuts & seasonal fruit</p>
+
+      </div>
+
+      <div class="price">€7</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="experience">
+
+  <div class="section-title">
+
+    <div class="eyebrow">Experience</div>
+
+    <h2>More than a meal.</h2>
+
+    <p>Enjoy Kionia from morning to sunset.</p>
+
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="Beach">
+
+      <div class="card-body">
+
+        <h3>The Beach</h3>
+
+        <p>Spend the day beside the Aegean and enjoy the relaxed atmosphere of Kionia.</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85" alt="Restaurant">
+
+      <div class="card-body">
+
+        <h3>Dining</h3>
+
+        <p>Fresh Mediterranean flavours made for long lunches and relaxed dinners.</p>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85" alt="Sunset">
+
+      <div class="card-body">
+
+        <h3>Sunset</h3>
+
+        <p>Stay a little longer. The Aegean sunsets are worth waiting for.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="section-title">
+
+    <div class="eyebrow">Visit us</div>
+
+    <h2>Come to Kionia.</h2>
+
+    <p>Leof. Stavrou Kionion, Tinos 842 00, Greece</p>
+
+    <br>
+
+    <a class="btn primary"
+
+       href="https://www.google.com/maps/search/?api=1&query=Kionia%20Tinos%2C%20Leof.%20Stavrou%20Kionion%2C%20Tinos%20842%2000%2C%20Greece"
+
+       target="_blank">
+
+       Get directions
+
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>© 2026 KIONIA Tinos · Tinos, Greece</p>
+
+  <p>Website concept — not an official KIONIA website.</p>
+
+</footer>
+
+</body>
+
+</html>
